@@ -1,0 +1,22 @@
+[package]
+name = "popcnt"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+bytemuck = "1.15.0"
+pulp = "0.18.9"
+
+[features]
+default = ["std"]
+std = ["pulp/std"]
+nightly = ["pulp/nightly"]
+
+[dev-dependencies]
+divan = "0.1.14"
+rand = "0.8.5"
+
+[[bench]]
+name = "bench"
+harness = false
+
