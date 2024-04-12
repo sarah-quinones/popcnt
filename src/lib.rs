@@ -1,3 +1,9 @@
+//! rust crate for counting the number of set bits in a byte slice, with simd acceleration when available.
+//!
+//! # features
+//! - `std`: enabled by default. enables runtime arch detection.
+//! - `nightly`: enables avx512 simd implementation.
+
 #![cfg_attr(
     all(feature = "nightly", any(target_arch = "x86", target_arch = "x86_64")),
     feature(stdarch_x86_avx512, avx512_target_feature)
