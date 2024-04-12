@@ -2,6 +2,12 @@
 name = "popcnt"
 version = "0.1.0"
 edition = "2021"
+authors = ["sarah <>"]
+description = "count number of set bits in a byte slice"
+readme = "README.md"
+repository = "https://github.com/sarah-ek/popcnt/"
+license = "MIT"
+keywords = ["popcnt", "count_ones"]
 
 [dependencies]
 bytemuck = "1.15.0"
