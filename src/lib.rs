@@ -285,6 +285,7 @@ mod x86 {
     }
 }
 
+/// Countes the number of bits equal to `1` in the provided slice, and returns the accumulated result.
 pub fn count_ones(bytes: &[u8]) -> u64 {
     #[cfg(any(target_arch = "x86", target_arch = "x86_64"))]
     {
