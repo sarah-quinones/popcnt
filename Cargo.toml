@@ -5,7 +5,7 @@ edition = "2021"
 
 [dependencies]
 bytemuck = "1.15.0"
-pulp = "0.18.9"
+pulp = { version = "0.18.9", default_features = false }
 
 [features]
 default = ["std"]
